@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <script src="https://cdn.tailwindcss.com"></script> <!-- Link to Tailwind CSS CDN -->
+</head>
+<body class="min-h-screen bg-gray-100 flex flex-col">
+
+    <!-- Navbar -->
+    <nav id="navbar" class="bg-sky-900 py-4">
+        <ul class="flex justify-center gap-12 text-white font-semibold text-lg">
+            <li><a href="index.html" class="hover:text-gray-200 transition">Home</a></li>
+            <li><a href="skill.html" class="hover:text-gray-200 transition">Skills</a></li>
+            <li><a href="location.html" class="hover:text-gray-200 transition">Location</a></li>
+            <li><a href="contact-me.html" class="hover:text-gray-200 transition">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Page Title -->
+    <section class="text-center my-12">
+        <h1 class="text-5xl font-extrabold text-sky-900">Contact Me</h1>
+        <p class="text-lg text-gray-600 mt-2">Feel free to reach out if you have any questions!</p>
+    </section>
+
+    <!-- Contact Form -->
+    <div class="flex justify-center items-center flex-grow">
+        <div class="bg-white rounded-xl shadow-xl p-8 w-full max-w-md">
+            <p class="text-sky-900 text-2xl font-semibold mb-6 text-center">Contact Form</p>
+
+            <!-- Form -->
+            <form action="#" method="POST">
+                <!-- Name Input -->
+                <div class="mb-5">
+                    <input type="text" name="name" placeholder="Your Name" class="w-full p-3 rounded-md border border-gray-300 focus:ring-2 focus:ring-sky-500 focus:outline-none" required>
+                </div>
+
+                <!-- Email Input -->
+                <div class="mb-5">
+                    <input type="email" name="email" placeholder="Your Email" class="w-full p-3 rounded-md border border-gray-300 focus:ring-2 focus:ring-sky-500 focus:outline-none" required>
+                </div>
+
+                <!-- Message Textarea -->
+                <div class="mb-5">
+                    <textarea name="message" rows="4" placeholder="Your Message" class="w-full p-3 rounded-md border border-gray-300 focus:ring-2 focus:ring-sky-500 focus:outline-none" required></textarea>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="w-full p-3 bg-sky-600 text-white rounded-md hover:bg-sky-700 transition duration-300 focus:ring-2 focus:ring-sky-500 focus:outline-none">
+                    Submit
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <footer class="bg-sky-900 text-white text-center py-4 mt-12">
+        <p>© 2025 Your Name. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
